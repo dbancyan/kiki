@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Día Kiara!</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f3f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Encabezado */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #ffafd7;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #ff69b4;
+            margin-top: 5px;
+        }
+        
+        /* Sección principal de mascotas */
+        .pets-section {
+            margin-bottom: 40px;
+        }
+        
+        .pets-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        
+        .pet-card {
+            width: 280px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .pet-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pet-image {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .pet-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .pet-info {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .pet-info h3 {
+            margin: 0;
+            color: #ff69b4;
+            font-size: 1.5em;
+        }
+        
+        .pet-info p {
+            margin: 10px 0;
+            color: #666;
+        }
+        
+        /* Galería de imágenes */
+        .gallery-section {
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .gallery-item {
+            flex: 0 0 calc(33.33% - 15px);
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Mensaje personalizado */
+        .message {
+            background-color: #ffafd7;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .message h2 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .message p {
+            color: white;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffafd7;
+            color: white;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 900px) {
+            .gallery-item {
+                flex: 0 0 calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .pet-card {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .gallery-item {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>¡Feliz Día Kiara!</h1>
+            <h2>La mejor mamá de mascotas del mundo</h2>
+        </header>
+        
+        <section class="pets-section">
+            <div class="pets-container">
+                <!-- Tarjeta de mascota 1 -->
+                <div class="pet-card">
+                    <div class="pet-image">
+                        <img src="image/img03.jpg" alt="Maki">
+                    </div>
+                    <div class="pet-info">
+                        <h3>Maki</h3>
+                        <p>El pequeño hámster aventurero</p>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de mascota 2 -->
+                <div class="pet-card">
+                    <div class="pet-image">
+                        <img src="image/img02.jpg" alt="Puppy">
+                    </div>
+                    <div class="pet-info">
+                        <h3>Puppy</h3>
+                        <p>El fiel perrito guardián</p>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de mascota 3 -->
+                <div class="pet-card">
+                    <div class="pet-image">
+                        <img src="image/img01.jpg" alt="Tiana">
+                    </div>
+                    <div class="pet-info">
+                        <h3>Tiana</h3>
+                        <p>La elegante reina negra</p>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de mascota 4 -->
+                <div class="pet-card">
+                    <div class="pet-image">
+                        <img src="image/img04.jpg" alt="Coqueta">
+                    </div>
+                    <div class="pet-info">
+                        <h3>Coqueta</h3>
+                        <p>La más juguetona y presumida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="message">
+            <h2>¡Te Queremos Mucho!</h2>
+            <p>Gracias por cuidarnos con tanto amor y dedicación.<br>
+            De Maki, Puppy, Tiana y Coqueta para la mejor mamá del mundo.<br>
+            Eres la mejor mamá que podríamos desear.<br>
+            ¡Feliz día especial, Kiara!</p>
+        </div>
+        
+        <!-- La sección de galería "Momentos Inolvidables" ha sido eliminada -->
+        
+        <footer>
+            <p>Con amor, de parte de tus cuatro peluditos 🐾</p>
+        </footer>
+    </div>
+</body>
+</html>
